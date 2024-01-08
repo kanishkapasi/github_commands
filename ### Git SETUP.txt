@@ -1,0 +1,93 @@
+git### Git SETUP
+
+#### Clone a new repository on the command line
+
+```bash
+git clone git@github.com:netronk/FO8297AC059C6.git
+```
+
+#### Create New Branch And Push To Github
+
+```bash
+git branch <branch-name>
+```
+
+#### Switch to a branch
+
+```bash
+git checkout <branch-name>
+```
+
+> Switched to branch <branch-name>
+
+#### Check Branch
+
+```bash
+git branch
+```
+
+> - <branch-name>
+>   main
+
+#### Push the branch to github
+
+```bash
+git add .
+git commit -m "commit message"
+git push origin <branch-name>
+```
+
+## Rebase To Main and Push to Github
+
+#### Switch to main branch
+
+```bash
+git checkout main
+```
+
+> Switched to branch 'main'
+
+#### Check Branch
+
+```bash
+git branch
+```
+
+>   <branch-name>
+>   * main
+
+#### Pull the latest changes from main
+
+```bash
+git pull origin main --rebase
+```
+
+#### rebase from your branch
+
+```bash
+git pull --rebase origin <branch-name>
+```
+
+> Successfully rebased and updated refs/heads/<branch-name>.
+
+#### Push the branch to github
+
+```bash
+git push origin main
+```
+
+## Work Again On Your Branch
+
+#### Switch to your branch
+
+```bash
+git checkout <branch-name>
+```
+
+> Switched to branch <branch-name>
+
+#### Check Updates
+
+```bash
+git pull --rebase origin main
+```
